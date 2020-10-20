@@ -1,0 +1,80 @@
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav a{
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+}
+.nav li {
+  text-align: start;
+  white-space: nowrap;
+  padding: 16px 8px 16px 8px;
+  font-size: 24px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.nav li:hover:not(.active) {
+  background-color: #111;
+}
+.nav .active {
+  background-color: #4CAF50;
+}
+#offerLink{
+  background-image: url("../../images/icons/fire.png");
+  background-repeat: no-repeat;
+  background-position:center right;
+  padding-right:30px ;
+  background-size: 35px 35px;
+}
+#navbar-brand{
+  text-transform: capitalize;
+  color: azure;
+  font-family: "Grenze Gotisch";
+  white-space: nowrap;
+  padding: 10px 8px 16px 8px;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+#navbar-brand:hover{
+  color: white;
+}
+
+
+.nav {
+  display: flex;
+  align-items:center;
+  position: fixed;
+  background-color: #333;
+  height: 55px;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .nav a {
+    padding: 16px 4px 16px 4px;
+    font-size: 16px;
+  }
+  #navbar-brand{
+    padding: 16px 8px 16px 8px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+

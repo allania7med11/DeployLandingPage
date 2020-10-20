@@ -1,0 +1,40 @@
+@import "./styles/container.css";
+@import "./styles/nav.css";
+@import "./styles/landing.css";
+@import "./features.css";
+@import "./reviews.css";
+@import "./specialOffre.css";
+html {
+  scroll-behavior: smooth;
+}
+.landing {
+  background-image: url("../images/Fusion2.png");
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+#landing {
+  padding-top:60px ;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: beige;
+}
+
+#reviews{
+  padding-top:60px ;
+  min-height:80vh ;
+}
+#features{
+  padding-top:60px ;
+  min-height:90vh ;
+}
+#specialOffre{
+  padding-top:60px ;
+  min-height:80vh ;
+}

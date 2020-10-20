@@ -1,0 +1,102 @@
+@import "./reset.css";
+body {
+  background-color: beige;
+}
+* {
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Sansita Swashed, sans-serif";
+  font-weight: bolder;
+  font-style: oblique;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+.reviews {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  flex-direction: column;
+}
+.grid-review {
+  display: grid;
+  grid-template-areas:
+    "image name   date"
+    "image rating date"
+    "content content content";
+  grid-template-columns: 100px 200px auto;
+  grid-template-rows: 35px 35px auto;
+}
+
+#reviews .image {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  grid-area: name;
+  padding: 5px 5px;
+}
+.name .full {
+  font-weight: bolder;
+  font-size: 14px;
+}
+.name .state {
+  font-size: 14px;
+}
+.date {
+    padding: 5px;
+    flex-direction: row-reverse;
+    font-size: 14px;
+    display: flex;
+}
+.rating {
+  grid-area: rating;
+  padding: 5px 10px;
+  display: flex;
+}
+.rating div {
+  width: 14px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.star-full {
+  background-image: url("../images/icons/star-full.png");
+}
+.star-empty {
+  background-image: url("../images/icons/star-empty.png");
+}
+.star-half-full {
+  background-image: url("../images/icons/star-half-full.png");
+}
+.date {
+  grid-area: date;
+}
+.content {
+  grid-area: content;
+}
+/* .grid-review > div {
+  border: 1px black solid;
+} */
+#reviews .image img {
+  max-width: 65px;
+  max-height: 65px;
+  border-radius: 50%;
+}
+#reviews  h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin:10px;
+}
+#reviews p{
+    font-size: 16px;
+    margin: 10px 20px;
+    line-height: 21px;
+}

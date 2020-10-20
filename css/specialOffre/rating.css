@@ -1,0 +1,21 @@
+.rating {
+    grid-area: rating;
+    padding: 5px 10px;
+    display: flex;
+  }
+  .rating div {
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .star-full {
+    background-image: url("../../images/icons/star-full.png");
+  }
+  .star-empty {
+    background-image: url("../../images/icons/star-empty.png");
+  }
+  .star-half-full {
+    background-image: url("../../images/icons/star-half-full.png");
+  }
